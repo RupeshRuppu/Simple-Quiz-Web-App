@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Ended</title>
+    <link rel="stylesheet" href="../CSS__FILES/end_test.css" />
+  </head>
+  <body>
+    <section class="wish__section">
+      <h1>
+        Thanks for giving test. Hope you enjoyed and learnt something new from
+        us :)
+      </h1>
+      <button onclick="getResult()">Check Result</button>
+    </section>
+    <section class="your__result"></section>
+  </body>
+  <script>
+    const value = window.localStorage.getItem("value");
+    const yourResult = document.querySelector(".your__result");
+    const getResult = () => {
+      yourResult.innerHTML = `<h1 style="text-align:center;">Your Result is ${value} / 5</h1>`;
+      setTimeout(() => {
+        window.location.href = "http://127.0.0.1:5500/HTML__FILES/index.html";
+      }, 5000);
+    };
+  </script>
+</html>

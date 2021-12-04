@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../CSS__FILES/styles.css">
+  <body>
+      <div class="section__header">
+          <h2>JavaScript Quiz Test</h2>
+      </div>
+      <section class="content__svg__button">
+        <section class="background__svg">
+            <img src="/Images/online_quiz_test.svg" alt="Quiz_Test">
+        </section>
+        <section class="start__action">
+            <button onclick="handleStartAction()">
+                Start Test
+            </button>
+        </section>
+    </section>
+    <div class="footer">
+      <p>Test your JavaScript Knowledge !!!</p>
+    </div>
+  </body>
+  <script>
+    const handleStartAction = () => {
+      window.location.href = "http://127.0.0.1:5500/HTML__FILES/test.html" 
+    }
+  </script>
+</html>
